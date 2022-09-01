@@ -1,0 +1,118 @@
+.menu__button-open {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  > .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 10px 15px 48px 40px;
+    overflow: auto;
+  }
+}
+
+.menu__button-close {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+    outline: none;
+  }
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.menu-contacts__item {
+  margin-bottom: 32px;
+}
+
+.menu-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    outline: none;
+  }
+  @media screen and (max-width: 351px) {
+    font-size: 30px;
+  }
+}
+
+.menu-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.menu-soc__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-soc__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+
+.menu-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    outline: none;
+  }
+}

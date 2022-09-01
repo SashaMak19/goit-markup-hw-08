@@ -1,0 +1,51 @@
+.work {
+  display: none;
+  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  width: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work__thumb {
+  position: relative;
+  .work__photo {
+    display: block;
+  }
+}
+
+.work__about {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--main-bg-color);
+}

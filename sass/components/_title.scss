@@ -1,0 +1,11 @@
+.section__title {
+  text-align: center;
+  @include font(700, 28px, 1.17);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.2;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.2);
+  }
+}
