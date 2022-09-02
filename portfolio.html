@@ -15,7 +15,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>goit-markup-hw-02</title>
   </head>
@@ -56,7 +55,7 @@
           </li>
         </ul>
         <button type="button" class="menu__button-open">
-          <svg width="40" height="40" area-label="Перемикач мобільного меню">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
@@ -64,9 +63,9 @@
           <div class="container">
             <div class="menu__top">
               <button type="button" class="menu__button-close">
-                <svg width="40" height="40" area-label="Перемикач мобільного меню">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                   <use
-                    сlass="navigation__icon-close"
+                    class="navigation__icon-close"
                     href="./images/icons.svg#icon-mobile-close"
                   ></use>
                 </svg>
@@ -148,6 +147,7 @@
                       srcset="./images/img5-phone-1x.jpg 1x, ./images/img5-phone-2x.jpg 2x"
                     />
                     <img
+                      src="./images/img5-ds-1x.jpg"
                       srcset="./images/img5-phone-1x.jpg 1x, ./images/img5-phone-2x.jpg 2x"
                       alt="Комп'ютер на якому зображено сайт з фотографіями людей"
                       width="450"
@@ -185,6 +185,7 @@
                       srcset="./images/img6-phone-1x.jpg 1x, ./images/img6-phone-2x.jpg 2x"
                     />
                     <img
+                      src="./images/img6.jpg"
                       srcset="./images/img6-phone-1x.jpg 1x, ./images/img6-phone-2x.jpg 2x"
                       alt="Два баскетболіста,один в одного намагаються забрати м'яч"
                       width="450"
@@ -222,6 +223,7 @@
                       srcset="./images/img7-phone-1x.jpg 1x, ./images/img7-phone-2x.jpg 2x"
                     />
                     <img
+                      src="./images/img7.jpg"
                       srcset="./images/img7-phone-1x.jpg 1x, ./images/img7-phone-2x.jpg 2x"
                       alt="Логотип ресторану морської їжі"
                       width="450"
@@ -245,13 +247,29 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img8.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img8-ds-1x.jpg 1x, ./images/img8-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img8-tb-1x.jpg 1x, ./images/img8-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img8-phone-1x.jpg 1x, ./images/img8-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img8.jpg"
+                      srcset="./images/img8-phone-1x.jpg 1x, ./images/img8-phone-2x.jpg 2x"
+                      alt="Навушники"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
+
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -268,13 +286,28 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img9-ds-1x.jpg 1x, ./images/img9-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img9-tb-1x.jpg 1x, ./images/img9-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img9-phone-1x.jpg 1x, ./images/img9-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img9.jpg"
+                      srcset="./images/img9-phone-1x.jpg 1x, ./images/img9-phone-2x.jpg 2x"
+                      alt="Дві коробки"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -291,13 +324,28 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img10.jpg"
-                    alt="Екран комп'ютера Епл"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img10-ds-1x.jpg 1x, ./images/img10-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img10-tb-1x.jpg 1x, ./images/img10-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img10-phone-1x.jpg 1x, ./images/img10-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img10.jpg"
+                      srcset="./images/img10-phone-1x.jpg 1x, ./images/img10-phone-2x.jpg 2x"
+                      alt="Екран комп'ютера Епл"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -314,13 +362,28 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img11.jpg"
-                    alt="Розгорнута книга"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img11-ds-1x.jpg 1x, ./images/img11-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img11-tb-1x.jpg 1x, ./images/img11-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img11-phone-1x.jpg 1x, ./images/img11-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img11.jpg"
+                      srcset="./images/img11-phone-1x.jpg 1x, ./images/img11-phone-2x.jpg 2x"
+                      alt="Розгорнута книга"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -337,13 +400,28 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img12.jpg"
-                    alt="Етикетка з надписом бренду"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img12-ds-1x.jpg 1x, ./images/img12-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img12-tb-1x.jpg 1x, ./images/img12-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img12-phone-1x.jpg 1x, ./images/img12-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img12.jpg"
+                      srcset="./images/img12-phone-1x.jpg 1x, ./images/img12-phone-2x.jpg 2x"
+                      alt="Етикетка з надписом бренду"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -360,13 +438,28 @@
             <li class="development__item">
               <a href="/" class="development__link link"
                 ><div class="development__wrapper">
-                  <img
-                    src="./images/img13.jpg"
-                    alt="Руки людини на клавіатурі ноутбука"
-                    width="370"
-                    height="294"
-                    class="development__photo"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/img13-ds-1x.jpg 1x, ./images/img13-ds-2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/img13-tb-1x.jpg 1x, ./images/img13-tb-2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/img13-phone-1x.jpg 1x, ./images/img13-phone-2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/img13.jpg"
+                      srcset="./images/img13-phone-1x.jpg 1x, ./images/img13-phone-2x.jpg 2x"
+                      alt="Руки людини на клавіатурі ноутбука"
+                      width="450"
+                      height="294"
+                      class="development__photo"
+                    />
+                  </picture>
                   <p class="development-resource__text bedcover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

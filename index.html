@@ -15,7 +15,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>goit-markup-hw-08</title>
   </head>
@@ -54,20 +53,21 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu__button-open">
-          <svg width="40" height="40" area-label="Перемикач мобільного меню">
+        <button type="button" class="menu__button-open" aria-label="Перемикач мобільного меню">
+          <svg width="40" height="40">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
         <div class="menu is-hidden">
           <div class="container">
             <div class="menu__top">
-              <button type="button" class="menu__button-close">
-                <svg width="40" height="40" area-label="Перемикач мобільного меню">
-                  <use
-                    сlass="navigation__icon-close"
-                    href="./images/icons.svg#icon-mobile-close"
-                  ></use>
+              <button
+                type="button"
+                class="menu__button-close"
+                aria-label="Перемикач мобільного меню"
+              >
+                <svg class="navigation__icon-close" width="40" height="40">
+                  <use href="./images/icons.svg#icon-mobile-close"></use>
                 </svg>
               </button>
               <nav class="menu-nav">
@@ -85,18 +85,10 @@
             <div class="menu__bottom">
               <ul class="menu-contacts__list list">
                 <li class="menu-contacts__item">
-                  <a href="tel:+380961111111" class="menu-contacts__tel link">
-                    <!-- <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg> -->
-                    +38 096 111 11 11</a
-                  >
+                  <a href="tel:+380961111111" class="menu-contacts__tel link"> +38 096 111 11 11</a>
                 </li>
                 <li class="menu-contacts__item">
                   <a href="mailto:info@devstudio.com" class="menu-contacts__link link">
-                    <!-- <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg> -->
                     info@devstudio.com</a
                   >
                 </li>
@@ -185,6 +177,7 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/box_1-ds-1x.jpg 1x, ./images/box_1-ds-2x.jpg 2x"
                   src="./images/box_1.jpg"
                   alt="Чоловік сидитись за комп'ютером ,за допомогою кодування він відтворює макет що лежить у нього на робочому столі"
                   width="370"
@@ -199,6 +192,7 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/box_2-ds-1x.jpg 1x, ./images/box_2-ds-2x.jpg 2x"
                   src="./images/box_2.jpg"
                   alt="Жінка сидить за комп'ютером та в одній руці тримає телефон,на комп'ютері зображені три телефона на екранах яких: три різних позиціонування блоків"
                   width="370"
@@ -213,6 +207,7 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/box_3-ds-1x.jpg 1x, ./images/box_3-ds-2x.jpg 2x"
                   src="./images/box_3.jpg"
                   alt="Планшет в руці,на екрані планшету зображена палітра кольорів"
                   width="370"
@@ -247,6 +242,7 @@
                   srcset="./images/img1-phone-1x.jpg 1x, ./images/img1-phone-2x.jpg 2x"
                 />
                 <img
+                  src="./images/img1.jpg"
                   srcset="./images/img1-phone-1x.jpg 1x, ./images/img1-phone-2x.jpg 2x"
                   alt="Фотопортрет команди"
                   width="450"
@@ -305,6 +301,7 @@
                   srcset="./images/img2-phone-1x.jpg 1x, ./images/img2-phone-2x.jpg 2x"
                 />
                 <img
+                  src="./images/img2.jpg"
                   srcset="./images/img2-phone-1x.jpg 1x, ./images/img2-phone-2x.jpg 2x"
                   alt="Фотопортрет команди"
                   width="450"
@@ -362,6 +359,7 @@
                   srcset="./images/img3-phone-1x.jpg 1x, ./images/img3-phone-2x.jpg 2x"
                 />
                 <img
+                  src="./images/img3.jpg"
                   srcset="./images/img3-phone-1x.jpg 1x, ./images/img3-phone-2x.jpg 2x"
                   alt="Фотопортрет команди"
                   width="450"
@@ -419,6 +417,7 @@
                   srcset="./images/img4-phone-1x.jpg 1x, ./images/img4-phone-2x.jpg 2x"
                 />
                 <img
+                  src="./images/img4.jpg"
                   srcset="./images/img4-phone-1x.jpg 1x, ./images/img4-phone-2x.jpg 2x"
                   alt="Фотопортрет команди"
                   width="450"

@@ -6,6 +6,12 @@
   --secondary-bg-color: #f5f4fa;
   --main-transition-duration: 250ms;
   --main-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-font-weight: 400;
+  --secondary-font-weight: 700;
+  --main-font-size: 14px;
+  --secondary-font-size: 16px;
+  --main-line-height: 1.17;
+  --main-letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -24,7 +30,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--main-letter-spacing);
   color: var(--main-text-color);
   background: var(--main-bg-color);
 }
@@ -55,7 +61,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-  width: 100%;
   height: auto;
 }
 
@@ -117,7 +122,7 @@ img {
 .menu-nav__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -134,7 +139,7 @@ img {
 .menu-contacts__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
@@ -151,7 +156,7 @@ img {
 .menu-contacts__link {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
@@ -208,7 +213,7 @@ img {
 
 .logo__text {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: var(--secondary-font-weight);
   font-size: 24px;
   line-height: 1.2;
   color: #2196f3;
@@ -221,7 +226,7 @@ img {
 
 .logo--text-white {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   line-height: 1.38;
   color: #ffffff;
 }
@@ -233,7 +238,7 @@ img {
 
 .logo--text-black {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   line-height: 1.38;
   color: #000000;
 }
@@ -283,8 +288,8 @@ img {
 
 .btn {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--secondary-font-size);
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
@@ -316,7 +321,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .back-drop.is-hidden .modal {
@@ -393,10 +398,15 @@ img {
 .modal__title {
   text-align: center;
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
+  font-weight: var(--secondary-font-weight);
+  font-size: 18px;
+  line-height: 1.5;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+  }
 }
 
 .modal-form {
@@ -413,7 +423,7 @@ img {
   display: inline-block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
 }
 
@@ -477,7 +487,7 @@ img {
   padding: 12px 16px;
   margin-bottom: 20px;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -491,31 +501,31 @@ img {
 }
 .modal-form__comment::-webkit-input-placeholder {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__comment::-moz-placeholder {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__comment:-ms-input-placeholder {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__comment::-ms-input-placeholder {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form__comment::placeholder {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -550,9 +560,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   font-size: 12px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   -webkit-transition: color 250ms var(--main-transition-timing-function);
   transition: color 250ms var(--main-transition-timing-function);
 }
@@ -576,8 +586,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
   }
 }
 
@@ -714,10 +724,10 @@ img {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--main-letter-spacing);
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
@@ -765,8 +775,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1060,8 +1070,8 @@ img {
 .features__title {
   margin-bottom: 10px;
   text-align: center;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--main-font-size);
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -1073,9 +1083,9 @@ img {
 }
 
 .features__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
 }
 
 .work {
@@ -1377,9 +1387,9 @@ img {
           align-items: center;
   margin-top: 20px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
   color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
@@ -1392,7 +1402,7 @@ img {
 
 .contacts__list .link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-font-size);
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
@@ -1445,9 +1455,9 @@ img {
 .join__title {
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
   text-align: left;
   text-transform: uppercase;
 }
@@ -1503,9 +1513,9 @@ img {
           justify-content: center;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
   text-align: left;
   text-transform: uppercase;
 }
@@ -1543,7 +1553,7 @@ img {
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
@@ -1673,7 +1683,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 1.55;
   color: var(--main-bg-color);
@@ -1716,7 +1726,7 @@ img {
 
 .development__title {
   color: var(--secondary-text-color);
-  font-weight: 700;
+  font-weight: var(--secondary-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1725,7 +1735,7 @@ img {
 .development__text {
   margin-top: 4px;
   color: var(--main-text-color);
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--main-line-height);
+  font-size: var(--secondary-font-size);
   line-height: 1.9;
 }/*# sourceMappingURL=main.css.map */

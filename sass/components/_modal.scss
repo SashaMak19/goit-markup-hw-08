@@ -10,15 +10,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 208px;
-  //   padding-bottom: 207px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 221px;
-  //   padding-bottom: 222px;
-  // }
+  overflow-y: auto;
 }
 
 .back-drop.is-hidden .modal {
@@ -34,10 +26,6 @@
 .modal {
   position: relative;
   padding: 40px;
-  // width: 100%;
-  // max-width: 450px;
-  // height: 100%;
-  // max-height: 609px;
   width: 450px;
   height: 609px;
   border-radius: 4px;
@@ -52,8 +40,6 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1200px) {
-    // min-width: 528px;
-    // max-height: 581px;
     width: 528px;
     height: 581px;
   }
@@ -87,9 +73,12 @@
   text-align: center;
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
+  font-weight: var(--secondary-font-weight);
+  font-size: 18px;
+  line-height: 1.5;
 
   color: var(--secondary-text-color);
+  @include phone {
+    font-size: 20px;
+  }
 }

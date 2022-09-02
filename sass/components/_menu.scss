@@ -46,7 +46,7 @@
 .menu-nav__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -64,7 +64,7 @@
 .menu-contacts__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   &:focus,
@@ -80,7 +80,7 @@
 .menu-contacts__link {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   &:focus,

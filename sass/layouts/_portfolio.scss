@@ -63,7 +63,7 @@
   padding: 77px 24px;
   align-items: center;
 
-  font-weight: 400;
+  font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 1.55;
   color: var(--main-bg-color);
@@ -93,7 +93,7 @@
 
 .development__title {
   color: var(--secondary-text-color);
-  font-weight: 700;
+  font-weight: var(--secondary-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -103,7 +103,7 @@
   margin-top: 4px;
 
   color: var(--main-text-color);
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--main-line-height);
+  font-size: var(--secondary-font-size);
   line-height: 1.9;
 }
